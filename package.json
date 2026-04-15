@@ -1,0 +1,29 @@
+{
+  "name": "1win-crash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test -w backend",
+    "build": "npm run build -w backend && npm run build -w frontend",
+    "dev:backend": "npm run dev -w backend",
+    "dev:frontend": "npm run dev -w frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkmk749278/1Win-Crash.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mkmk749278/1Win-Crash/issues"
+  },
+  "homepage": "https://github.com/mkmk749278/1Win-Crash#readme",
+  "private": "true",
+  "workspaces": [
+    "apps/backend",
+    "apps/frontend"
+  ]
+}
