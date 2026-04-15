@@ -1,6 +1,6 @@
 import cors from 'cors';
 import express from 'express';
-import pinoHttp from 'pino-http';
+import { pinoHttp } from 'pino-http';
 import authRoutes from './routes/auth.js';
 import strategyRoutes from './routes/strategies.js';
 import dataRoutes from './routes/data.js';

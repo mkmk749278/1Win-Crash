@@ -55,7 +55,9 @@ export class StrategyEngine {
         message
       });
 
-      await StrategyModel.findByIdAndUpdate((strategy as { _id: string })._id, { $set: { lastTriggeredAt: new Date() } });
+      await StrategyModel.findByIdAndUpdate((strategy as { _id: { toString: () => string } })._id.toString(), {
+        $set: { lastTriggeredAt: new Date() }
+      });
     }
   }
 }
